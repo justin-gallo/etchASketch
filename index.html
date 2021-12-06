@@ -16,6 +16,19 @@
         </ul>
     </header>
     <main id="main">
+        <div class="controlsContainer">
+            <h2>Canvas Size</h2>
+            <div class="sizeSlider">
+                <input type="range" min="1" max="100" value="32" class="slider" id="sizeRange">
+              </div>
+            <h2>Brush Color</h2>
+            <div class="colorContainer">
+                <button class="colorBlack"></button>
+                <button class="colorWhite"></button>
+                <button class="colorRainbow"></button>
+            </div>
+            <button class="clearButton">Clear Canvas</button>
+        </div>
         <div class="drawingContainer"></div>
     </main>
 </body>

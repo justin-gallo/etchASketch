@@ -1,25 +1,111 @@
 .drawingContainer {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.row {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.row {
-    background-color: lightslategray;
-    display: flex;
-}
-
 .pixel {
-    background-color: lightslategray;
+    background-color: #fcf8e0;
 }
 
 #main {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 32px;
 }
 
 .pixelsHover {
     background-color: black;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    background-color: #335c67;
+    padding: 0px 30px 0px 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: darkcyan;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #fff3b0;
+}
+
+h1 {
+    color: #fff3b0;
+}
+
+h2 {
+    font-size: 24px;
+    color: #9e2a2b;
+    margin-bottom: 12px;
+}
+
+.controlsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 64px;
+}
+
+.colorContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 12px;
+}
+
+.colorBlack {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+
+.colorWhite {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+}
+
+.colorRainbow {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(217, 150, 219);
+}
+
+.clearButton {
+    width: 120px;
+    height: 20px;
+    background-color:rgb(230, 144, 95);
+    margin-top: 32px;
 }
