@@ -1,0 +1,25 @@
+.drawingContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    background-color: lightslategray;
+    display: flex;
+}
+
+.pixel {
+    background-color: lightslategray;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pixelsHover {
+    background-color: black;
+}
