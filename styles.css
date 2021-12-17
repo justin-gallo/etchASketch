@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Retronoid';
+    src: url('assets/fonts/Retronoid.ttf') format('truetype');
+}
+
 .drawingContainer {
     display: flex;
     flex-direction: column;
@@ -10,7 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fcf8e0;
+    background-color: #c7c1a2;
 }
 
 #main {
@@ -31,8 +36,8 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 150px;
-    background-color: #335c67;
-    padding: 0px 30px 0px 30px;
+    background-color: #1f1f1f;
+    padding: 0px 60px 0px 60px;
 }
 
 ul {
@@ -41,12 +46,13 @@ ul {
 
 a {
     text-decoration: none;
-    color: white;
+    color: rgb(79, 221, 221);
+    font-family: 'Retronoid';
 }
 
 a:hover {
     text-decoration: none;
-    color: darkcyan;
+    color: rgb(129, 79, 221);
 }
 
 body {
@@ -54,17 +60,14 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    background-color: #fff3b0;
+    background-color: #1f1f1f;
 }
 
 h1 {
-    color: #fff3b0;
-}
-
-h2 {
-    font-size: 24px;
-    color: #9e2a2b;
-    margin-bottom: 12px;
+    color: #ff8cf0;
+    font-family: 'Retronoid';
+    font-size: 64px;
+    font-weight: 300;
 }
 
 .controlsContainer {
@@ -76,8 +79,17 @@ h2 {
 }
 
 .clearButton {
-    width: 120px;
-    height: 20px;
-    background-color:rgb(230, 144, 95);
+    width: 160px;
+    height: 60px;
+    background-color:#8cffc9;
     margin-top: 32px;
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: black;
+    font-family: 'Retronoid';
+    font-size: 20px;
+}
+
+.clearButton:hover {
+    background-color:#ff5959;
 }
