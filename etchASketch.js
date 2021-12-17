@@ -2,8 +2,9 @@ let numOfPixels = 32;
 let totalRes = 640;
 let sizeOfPixel = (totalRes/numOfPixels).toFixed(0);
 
+const drawingContainer = document.querySelector(".drawingContainer");
+
 function createRows(dimension) {
-    const drawingContainer = document.querySelector(".drawingContainer");
     drawingContainer.setAttribute("style",`width:${totalRes}px; height:${totalRes}px;`);
     for (let i = 0; i <= numOfPixels; i++) {
         let row = document.createElement('div');
@@ -24,7 +25,27 @@ createRows(numOfPixels);
 let pixels = document.querySelectorAll('.pixel');
 
 pixels.forEach((div) => {
-    div.addEventListener('mouseover', function() {
-        div.classList.add('pixelsHover');
+    div.addEventListener('mouseover', function(activeColor) {
+        div.classList.add('pixelsHoverBlack');
     });
 });
+
+const resetBtn = document.querySelector('.clearButton');
+resetBtn.addEventListener("click", () => {
+    numOfPixels = prompt("Enter a size for the new canvas between 1 and 100.", "32");
+    sizeOfPixel = (totalRes/numOfPixels).toFixed(0);
+    clearChildNodes(drawingContainer);
+    createRows(numOfPixels);
+    let pixels = document.querySelectorAll('.pixel');
+    pixels.forEach((div) => {
+        div.addEventListener('mouseover', function(activeColor) {
+            div.classList.add('pixelsHoverBlack');
+        });
+    });
+});
+
+function clearChildNodes(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    };
+};
